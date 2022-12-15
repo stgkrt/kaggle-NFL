@@ -1,0 +1,16 @@
+*.bin
+jupyter.log
+.virtual_documents
+*.pt
+*.pyc
+*.pth
+*.ckpt
+*.zip
+*.jpg
+*.csv
+*.png
+*.cache
+.ipynb_checkpoints
+
+input/
+output/
