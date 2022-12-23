@@ -17,3 +17,5 @@ output/
 model/
 mlruns/
 */mlruns/
+
+wandb_api.txt
