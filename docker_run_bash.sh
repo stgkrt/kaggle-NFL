@@ -1,4 +1,4 @@
-# eTAG="kaggle_env"
+# TAG="kaggle_env"
 # ENV_NAME="NFL"
 # PROJECT_DIR="$(cd "$(dirname "${0}")" || exit; pwd)"
 
@@ -13,7 +13,7 @@
 #             ${TAG} \
 #             /bin/bash
 
-eTAG="kaggle_env"
+TAG="kaggle_env"
 PROJECT_DIR="$(cd "$(dirname "${0}")" || exit; pwd)"
 
 docker run  --gpus all \
