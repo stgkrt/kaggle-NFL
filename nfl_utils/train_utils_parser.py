@@ -2,11 +2,9 @@
 
 import os
 import yaml
-import gc
 
 import pandas as pd
 import numpy as np
-import cv2
 
 # basic torch and model functions
 import torch
@@ -306,7 +304,6 @@ def training_loop(target_df):
             if valid_score > best_score:
                 best_score = valid_score
                 model_name = CFG["model_name"]
-                MODEL_DIR = CFG["MODEL_DIR"]
                 torch.save(model.state_dict(), f'{MODEL_DIR}/{model_name}_fold{fold}.pth')
                 print(f'\t Epoch {epoch} - Save Best Score: {best_score:.4f}. Model is saved.')
                 contact_id = valid_df["contact_id"].values

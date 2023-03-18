@@ -1,0 +1,37 @@
+2023-03-11 08:40:56,084 INFO    MainThread:32418 [internal.py:wandb_internal():90] W&B internal server running at pid: 32418, started at: 2023-03-11 08:40:56.082279
+2023-03-11 08:40:56,085 INFO    WriterThread:32418 [datastore.py:open_for_write():77] open: /workspace/nfl_utils/wandb/run-20230311_084055-tkygmrej/run-tkygmrej.wandb
+2023-03-11 08:40:56,085 DEBUG   HandlerThread:32418 [handler.py:handle_request():130] handle_request: check_version
+2023-03-11 08:40:56,087 DEBUG   SenderThread:32418 [sender.py:send():234] send: header
+2023-03-11 08:40:56,087 DEBUG   SenderThread:32418 [sender.py:send_request():248] send_request: check_version
+2023-03-11 08:40:56,273 DEBUG   SenderThread:32418 [sender.py:send():234] send: run
+2023-03-11 08:40:57,274 INFO    WriterThread:32418 [datastore.py:close():281] close: /workspace/nfl_utils/wandb/run-20230311_084055-tkygmrej/run-tkygmrej.wandb
+2023-03-11 08:40:57,274 INFO    HandlerThread:32418 [handler.py:finish():731] shutting down handler
+2023-03-11 08:40:57,275 ERROR   MainThread:32418 [internal.py:wandb_internal():158] Thread SenderThread:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/wandb/sdk/internal/internal_util.py", line 52, in run
+    self._run()
+  File "/opt/conda/lib/python3.7/site-packages/wandb/sdk/internal/internal_util.py", line 102, in _run
+    self._process(record)
+  File "/opt/conda/lib/python3.7/site-packages/wandb/sdk/internal/internal.py", line 291, in _process
+    self._sm.send(record)
+  File "/opt/conda/lib/python3.7/site-packages/wandb/sdk/internal/sender.py", line 236, in send
+    send_handler(record)
+  File "/opt/conda/lib/python3.7/site-packages/wandb/sdk/internal/sender.py", line 655, in send_run
+    run.project = util.auto_project_name(self._settings.program)
+  File "/opt/conda/lib/python3.7/site-packages/wandb/util.py", line 1171, in auto_project_name
+    root_dir = wandb.wandb_sdk.lib.git.GitRepo().root_dir
+  File "/opt/conda/lib/python3.7/site-packages/wandb/sdk/lib/git.py", line 126, in root_dir
+    return self.repo.git.rev_parse("--show-toplevel")
+  File "/opt/conda/lib/python3.7/site-packages/git/cmd.py", line 639, in <lambda>
+    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/git/cmd.py", line 1184, in _call_process
+    return self.execute(call, **exec_kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/git/cmd.py", line 984, in execute
+    raise GitCommandError(redacted_command, status, stderr_value, stdout_value)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git rev-parse --show-toplevel
+  stderr: 'fatal: unsafe repository ('/workspace' is owned by someone else)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /workspace'
+2023-03-11 08:40:59,288 INFO    MainThread:32418 [internal.py:handle_exit():77] Internal process exited

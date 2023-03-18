@@ -1,0 +1,33 @@
+
+Using device: cuda
+75
+original length 4721618
+4721618
+660553
+original length 660553
+108
+original length 660553
+660553
+1000
+233
+---
+fold 0 start training...
+train target contact
+0    595
+1     71
+Name: contact, dtype: int64
+valid target contact
+0    297
+1     37
+Name: contact, dtype: int64
+	 === epoch: 1: training ===
+---
+fold 0 start training...
+train target contact
+0    595
+1     71
+Name: contact, dtype: int64
+valid target contact
+0    297
+1     37
+Name: contact, dtype: int64

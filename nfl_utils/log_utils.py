@@ -3,7 +3,6 @@ import time
 import math
 
 import wandb
-import mlflow
 
 def asMinutes(s):
     """Convert Seconds to Minutes."""
@@ -38,24 +37,13 @@ class AverageMeter(object):
         
         
 def logging_metrics_epoch(fold, epoch, train_loss_avg, valid_loss_avg, score, threshold, tn_best, fp_best, fn_best, tp_best, auc_score):
-    if CFG["kaggle"]:
-        wandb.log({"loss avg":{f"train/fold{fold}": train_loss_avg,
-                                f"valid/fold{fold}": valid_loss_avg}}, step=epoch)
-        wandb.log({"Metircs" : {f"score/fold{fold}":score,
-                                f"score threshold/fold{fold}":threshold,
-                                f"tn/fold{fold}":tn_best,
-                                f"fp/fold{fold}":fp_best,
-                                f"fn/fold{fold}":fn_best,
-                                f"tp/fold{fold}":tp_best,
-                                f"auc/fold{fold}":auc_score,
-                               }}, step=epoch)
-    else:
-        mlflow.log_metric(f"fold{fold} train loss avg", train_loss_avg, step=epoch)
-        mlflow.log_metric(f"fold{fold} valid loss avg", valid_loss_avg, step=epoch)
-        mlflow.log_metric(f"fold{fold} score", score, step=epoch)
-        mlflow.log_metric(f"fold{fold} score threshold", threshold, step=epoch)
-        mlflow.log_metric(f"fold{fold} tn", tn_best, step=epoch)
-        mlflow.log_metric(f"fold{fold} fp", fp_best, step=epoch)
-        mlflow.log_metric(f"fold{fold} fn", fn_best, step=epoch)
-        mlflow.log_metric(f"fold{fold} tp", tp_best, step=epoch)
-        mlflow.log_metric(f"fold{fold} auc", auc_score, step=epoch)
+    wandb.log({"loss avg":{f"train/fold{fold}": train_loss_avg,
+                            f"valid/fold{fold}": valid_loss_avg}}, step=epoch)
+    wandb.log({"Metircs" : {f"score/fold{fold}":score,
+                            f"score threshold/fold{fold}":threshold,
+                            f"tn/fold{fold}":tn_best,
+                            f"fp/fold{fold}":fp_best,
+                            f"fn/fold{fold}":fn_best,
+                            f"tp/fold{fold}":tp_best,
+                            f"auc/fold{fold}":auc_score,
+                            }}, step=epoch)

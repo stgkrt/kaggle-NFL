@@ -1,0 +1,88 @@
+
+Using device: cuda
+75
+original length 4721618
+4721618
+660553
+original length 660553
+108
+original length 660553
+660553
+1000
+233
+---
+fold 0 start training...
+train target contact
+0    595
+1     71
+Name: contact, dtype: int64
+valid target contact
+0    297
+1     37
+Name: contact, dtype: int64
+	 === epoch: 1: training ===
+	 Epoch: [1][0/21] Elapsed 0m 0s (remain 0m 10s) Loss: 0.7028(0.7028)
+	 Epoch: [1][20/21] Elapsed 0m 2s (remain 0m 0s) Loss: 0.3711(0.3422)
+	 EVAL: [0/11] Elapsed 0m 0s (remain 0m 2s) Loss: 0.2745(0.2745)
+	 EVAL: [10/11] Elapsed 0m 1s (remain 0m 0s) Loss: 0.2482(0.3225)
+	 epoch:1, avg train loss:0.3422, avg valid loss:0.3225
+	 score:0.1861(th=0.2) AUC = 0.7032=> time:0.07 min
+	 Epoch 1 - Save Best Score: 0.1861. Model is saved.
+	 === epoch: 2: training ===
+	 Epoch: [2][0/21] Elapsed 0m 0s (remain 0m 7s) Loss: 0.2498(0.2498)
+	 Epoch: [2][20/21] Elapsed 0m 2s (remain 0m 0s) Loss: 0.3447(0.2882)
+	 EVAL: [0/11] Elapsed 0m 0s (remain 0m 2s) Loss: 0.2830(0.2830)
+	 EVAL: [10/11] Elapsed 0m 1s (remain 0m 0s) Loss: 0.2237(0.3378)
+	 epoch:2, avg train loss:0.2882, avg valid loss:0.3378
+	 score:0.1829(th=0.1) AUC = 0.6616=> time:0.15 min
+---
+fold 1 start training...
+train target contact
+0    594
+1     73
+Name: contact, dtype: int64
+valid target contact
+0    298
+1     35
+Name: contact, dtype: int64
+	 === epoch: 1: training ===
+	 Epoch: [1][0/21] Elapsed 0m 0s (remain 0m 7s) Loss: 0.6767(0.6767)
+	 Epoch: [1][20/21] Elapsed 0m 2s (remain 0m 0s) Loss: 0.3257(0.3563)
+	 EVAL: [0/11] Elapsed 0m 0s (remain 0m 2s) Loss: 0.3412(0.3412)
+	 EVAL: [10/11] Elapsed 0m 1s (remain 0m 0s) Loss: 0.4899(0.3224)
+	 epoch:1, avg train loss:0.3563, avg valid loss:0.3224
+	 score:0.2358(th=0.2) AUC = 0.7158=> time:0.07 min
+	 Epoch 1 - Save Best Score: 0.2358. Model is saved.
+	 === epoch: 2: training ===
+	 Epoch: [2][0/21] Elapsed 0m 0s (remain 0m 7s) Loss: 0.1568(0.1568)
+	 Epoch: [2][20/21] Elapsed 0m 2s (remain 0m 0s) Loss: 0.1365(0.2930)
+	 EVAL: [0/11] Elapsed 0m 0s (remain 0m 2s) Loss: 0.4583(0.4583)
+	 EVAL: [10/11] Elapsed 0m 1s (remain 0m 0s) Loss: 0.7216(0.4049)
+	 epoch:2, avg train loss:0.2930, avg valid loss:0.4049
+	 score:0.0985(th=0.1) AUC = 0.7539=> time:0.14 min
+---
+fold 2 start training...
+train target contact
+0    595
+1     72
+Name: contact, dtype: int64
+valid target contact
+0    297
+1     36
+Name: contact, dtype: int64
+	 === epoch: 1: training ===
+	 Epoch: [1][0/21] Elapsed 0m 0s (remain 0m 7s) Loss: 0.6692(0.6692)
+	 Epoch: [1][20/21] Elapsed 0m 2s (remain 0m 0s) Loss: 0.4175(0.3730)
+	 EVAL: [0/11] Elapsed 0m 0s (remain 0m 2s) Loss: 0.4263(0.4263)
+	 EVAL: [10/11] Elapsed 0m 1s (remain 0m 0s) Loss: 0.2339(0.3558)
+	 epoch:1, avg train loss:0.3730, avg valid loss:0.3558
+	 score:0.2269(th=0.2) AUC = 0.6969=> time:0.07 min
+	 Epoch 1 - Save Best Score: 0.2269. Model is saved.
+	 === epoch: 2: training ===
+	 Epoch: [2][0/21] Elapsed 0m 0s (remain 0m 7s) Loss: 0.3876(0.3876)
+	 Epoch: [2][20/21] Elapsed 0m 2s (remain 0m 0s) Loss: 0.2371(0.3226)
+	 EVAL: [0/11] Elapsed 0m 0s (remain 0m 2s) Loss: 0.3967(0.3967)
+	 EVAL: [10/11] Elapsed 0m 1s (remain 0m 0s) Loss: 0.1191(0.2932)
+	 epoch:2, avg train loss:0.3226, avg valid loss:0.2932
+	 score:0.3904(th=0.2) AUC = 0.7699=> time:0.15 min
+	 Epoch 2 - Save Best Score: 0.3904. Model is saved.

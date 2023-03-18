@@ -1,0 +1,5 @@
+<wandb.sdk.wandb_run.Run object at 0x7f7ac155dc10>
+
+
+[?2004h>>> wandb.finish()
+[?2004l

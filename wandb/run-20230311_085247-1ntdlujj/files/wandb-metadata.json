@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.12",
+    "heartbeatAt": "2023-03-11T08:52:49.524413",
+    "startedAt": "2023-03-11T08:52:47.234143",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/root/.local/share/jupyter/runtime/kernel-c35cb479-1c08-4859-9fc7-5ead1a829be4.json"
+    ],
+    "state": "running",
+    "program": "exp_refactor-jvsc-abcfef08-0ebd-4c7f-805d-31c67ad278b5b91d4f74-625c-495d-9aff-b17f44146487.ipynb",
+    "root": "/workspace",
+    "git": {
+        "remote": "git@github.com:stgkrt/kaggle-NFL.git",
+        "commit": "9ebde9f03c5a4893b7dde393349536431a42a8f8"
+    },
+    "email": null,
+    "host": "9dbb052c36fc",
+    "username": "root",
+    "executable": "/opt/conda/bin/python"
+}

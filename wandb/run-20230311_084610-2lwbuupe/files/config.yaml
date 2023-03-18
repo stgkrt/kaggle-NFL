@@ -1,0 +1,156 @@
+wandb_version: 1
+
+CONTACT_IMG_DIR:
+  desc: null
+  value: /workspace/input/contact_images
+DEBUG:
+  desc: null
+  value: true
+EXP_CATEGORY:
+  desc: null
+  value: DEBUG
+EXP_NAME:
+  desc: null
+  value: DEBUG
+INPUT_DIR:
+  desc: null
+  value: /workspace/input
+MODEL_DIR:
+  desc: null
+  value: /workspace/output/DEBUG/model
+OUTPUT_DIR:
+  desc: null
+  value: /workspace/output
+SAVED_CONTACT_CSV:
+  desc: null
+  value: /workspace/input/Saved_contact_frames.csv
+TRAIN_HELMET_CSV:
+  desc: null
+  value: /workspace/input/train_baseline_helmets.csv
+TRAIN_LABEL_CSV:
+  desc: null
+  value: /workspace/input/train_labels.csv
+TRAIN_TRACKING_CSV:
+  desc: null
+  value: /workspace/input/train_player_tracking.csv
+TRAIN_VIDEO_META_CSV:
+  desc: null
+  value: /workspace/input/train_video_metadata.csv
+TRAIN_VIDEO_NUM:
+  desc: null
+  value: 100
+T_max:
+  desc: null
+  value: 10
+VALID_VIDEO_NUM:
+  desc: null
+  value: 10
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.9
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.7.12
+    start_time: 1678524370
+    t:
+      1:
+      - 1
+      - 5
+      3:
+      - 13
+      - 16
+      4: 3.7.12
+      5: 0.12.9
+      8:
+      - 1
+      - 5
+batch_size:
+  desc: null
+  value: 32
+features:
+  desc: null
+  value:
+  - x_position_1
+  - y_position_1
+  - x_position_2
+  - y_position_2
+  - speed_1
+  - distance_1
+  - direction_1
+  - orientation_1
+  - acceleration_1
+  - sa_1
+  - speed_2
+  - distance_2
+  - direction_2
+  - orientation_2
+  - acceleration_2
+  - sa_2
+  - players_dis
+img_size:
+  desc: null
+  value:
+  - 224
+  - 224
+inp_channels:
+  desc: null
+  value: 3
+kaggle:
+  desc: null
+  value: false
+lr:
+  desc: null
+  value: 0.0001
+masksize_helmet_ratio:
+  desc: null
+  value: 4
+min_lr:
+  desc: null
+  value: 1.0e-08
+model_name:
+  desc: null
+  value: swin_s3_tiny_224
+n_epoch:
+  desc: null
+  value: 2
+n_folds:
+  desc: null
+  value: 3
+num_img_feature:
+  desc: null
+  value: 10
+num_workers:
+  desc: null
+  value: 2
+out_features:
+  desc: null
+  value: 20
+pretrained:
+  desc: null
+  value: true
+print_freq:
+  desc: null
+  value: 1000
+random_seed:
+  desc: null
+  value: 21
+roll_sum_window_size:
+  desc: null
+  value: 10
+sample_num:
+  desc: null
+  value: 1000
+train_folds:
+  desc: null
+  value:
+  - 0
+  - 1
+  - 2
+wandb:
+  desc: null
+  value: true
+weight_decay:
+  desc: null
+  value: 1.0e-06

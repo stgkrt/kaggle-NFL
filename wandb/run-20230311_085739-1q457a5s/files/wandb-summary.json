@@ -1,0 +1,1 @@
+{"loss avg": {"train/fold2": 0.3225794658064842, "valid/fold2": 0.29323979873548855}, "Metircs": {"score/fold2": 0.39036239878195544, "score threshold/fold2": 0.2, "tn/fold2": 259, "fp/fold2": 38, "fn/fold2": 14, "tp/fold2": 22, "auc/fold2": 0.7699214365881032}, "_runtime": 49, "_timestamp": 1678525108, "_step": 2, "_wandb": {"runtime": 48}}
