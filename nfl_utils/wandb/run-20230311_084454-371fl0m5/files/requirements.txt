@@ -180,7 +180,7 @@ fiona==1.8.21
 fitter==1.4.1
 flake8==4.0.1
 flashtext==2.7
-flask==2.2.2
+flask==2.2.5
 flatbuffers==1.12
 flax==0.6.0
 flit-core==3.7.1
